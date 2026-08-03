@@ -1,0 +1,103 @@
+{
+  "header": {
+    "brand": "North Harbor Studio",
+    "home": "Home",
+    "whatWeDo": "What We Do",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us",
+    "themeToggle": "Toggle theme"
+  },
+  "home": {
+    "kicker": "Business Card Site",
+    "title": "North Harbor Studio",
+    "subtitle": "We help small businesses build clean websites and clear messaging that bring in better leads.",
+    "description": "From first draft to launch, we turn fuzzy ideas into clear pages that feel premium, load fast, and convert consistently.",
+    "ctaPrimary": "Book a Discovery Call",
+    "ctaSecondary": "See Our Work",
+    "badge1": "Web Design",
+    "badge2": "Messaging",
+    "badge3": "Monthly Support"
+  },
+  "metrics": {
+    "m1Value": "120+",
+    "m1Label": "Projects Delivered",
+    "m2Value": "4.9/5",
+    "m2Label": "Average Client Rating",
+    "m3Value": "48h",
+    "m3Label": "Average First Draft"
+  },
+  "services": {
+    "title": "What We Do",
+    "intro": "A focused set of services built for local brands and growing teams that need clarity, speed, and polished presentation.",
+    "items": {
+      "messagingTitle": "Brand Messaging",
+      "messagingText": "Clear headlines and copy that tell people what you do.",
+      "messagingDetail": "We define your value proposition, tone, and page structure so every section feels intentional.",
+      "designTitle": "Website Design",
+      "designText": "Fast, mobile-friendly pages that look professional.",
+      "designDetail": "Modern layouts, conversion-focused hierarchy, and responsive sections that work on every screen size.",
+      "supportTitle": "Ongoing Support",
+      "supportText": "Simple monthly updates so your site stays fresh.",
+      "supportDetail": "Content edits, seasonal updates, and performance checks without complicated contracts."
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "intro": "Simple process. Fast decisions. Weekly momentum.",
+    "step1Title": "Discover",
+    "step1Text": "We map your offers, audience, and goals in one short strategy call.",
+    "step2Title": "Design",
+    "step2Text": "We craft a polished one-page direction with clear hierarchy and persuasive copy.",
+    "step3Title": "Launch",
+    "step3Text": "After revisions, we publish, optimize, and hand off with documentation."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "intro": "A few words from clients who needed better positioning and a cleaner digital presence.",
+    "quote1": "\"Our calls doubled in the first month. The new site finally explains what we offer in plain language.\"",
+    "author1": "Alex",
+    "role1": "Home Services Owner",
+    "quote2": "\"Quick, organized, and easy to work with. We launched in a week and the results were immediate.\"",
+    "author2": "Priya",
+    "role2": "Boutique Manager",
+    "quote3": "\"The process felt simple from day one. Every section now sounds like us and looks far more credible.\"",
+    "author3": "Marcos",
+    "role3": "Consulting Founder",
+    "quote4": "\"The one-page format made our offer clearer. Customers now understand our service in less than a minute.\"",
+    "author4": "Diana",
+    "role4": "Wellness Studio Director",
+    "quote5": "\"Great communication and great design taste. They translated our messy draft into something elegant and practical.\"",
+    "author5": "Hugo",
+    "role5": "Law Office Partner",
+    "quote6": "\"We were surprised by how fast the first version arrived. The revisions were sharp and strategic.\"",
+    "author6": "Nina",
+    "role6": "Hospitality Manager",
+    "quote7": "\"Our brand finally feels cohesive online. The new page is simple, modern, and easy to update.\"",
+    "author7": "Sam",
+    "role7": "Creative Agency Lead",
+    "quote8": "\"The process removed guesswork. We had clear milestones, clear copy, and a strong launch.\"",
+    "author8": "Leila",
+    "role8": "E-commerce Owner",
+    "quote9": "\"Professional, friendly, and detail-oriented from start to finish. We now look like a bigger company.\"",
+    "author9": "Victor",
+    "role9": "B2B Services Founder"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Tell us what you are building and we will send a practical plan with scope, timeline, and next steps.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "addressValue": "128 Harbor Street, Suite 04",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon-Fri, 9:00-18:00",
+    "formName": "Your Name",
+    "formEmail": "Your Email",
+    "formMessage": "Project Details",
+    "formButton": "Send Request",
+    "note": "This is a placeholder form for future integration with your email workflow."
+  },
+  "footer": {
+    "tagline": "Small team. Clean websites. Clear message."
+  }
+}

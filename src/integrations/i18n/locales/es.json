@@ -1,0 +1,103 @@
+{
+  "header": {
+    "brand": "North Harbor Studio",
+    "home": "Inicio",
+    "whatWeDo": "Qué Hacemos",
+    "testimonials": "Testimonios",
+    "contact": "Contáctanos",
+    "themeToggle": "Cambiar tema"
+  },
+  "home": {
+    "kicker": "Sitio Tipo Tarjeta de Presentación",
+    "title": "North Harbor Studio",
+    "subtitle": "Ayudamos a pequeñas empresas a crear sitios web limpios y mensajes claros que atraen mejores clientes potenciales.",
+    "description": "Desde el primer borrador hasta el lanzamiento, convertimos ideas difusas en páginas claras, elegantes, rápidas y orientadas a conversión.",
+    "ctaPrimary": "Reservar Llamada",
+    "ctaSecondary": "Ver Proyectos",
+    "badge1": "Diseño Web",
+    "badge2": "Mensajería",
+    "badge3": "Soporte Mensual"
+  },
+  "metrics": {
+    "m1Value": "120+",
+    "m1Label": "Proyectos Entregados",
+    "m2Value": "4.9/5",
+    "m2Label": "Calificación Promedio",
+    "m3Value": "48h",
+    "m3Label": "Primer Borrador"
+  },
+  "services": {
+    "title": "Qué Hacemos",
+    "intro": "Un conjunto enfocado de servicios para marcas locales y equipos en crecimiento que necesitan claridad, rapidez y presentación profesional.",
+    "items": {
+      "messagingTitle": "Mensaje de Marca",
+      "messagingText": "Titulares y textos claros que explican lo que haces.",
+      "messagingDetail": "Definimos propuesta de valor, tono y estructura para que cada sección tenga intención.",
+      "designTitle": "Diseño Web",
+      "designText": "Páginas rápidas, adaptadas a móvil y con apariencia profesional.",
+      "designDetail": "Diseños modernos, jerarquía orientada a conversión y experiencia consistente en todos los dispositivos.",
+      "supportTitle": "Soporte Continuo",
+      "supportText": "Actualizaciones mensuales simples para mantener tu sitio al día.",
+      "supportDetail": "Ediciones de contenido, campañas estacionales y mejoras de rendimiento sin complejidad."
+    }
+  },
+  "process": {
+    "title": "Cómo Trabajamos",
+    "intro": "Proceso simple. Decisiones rápidas. Avance semanal.",
+    "step1Title": "Descubrimiento",
+    "step1Text": "Definimos oferta, audiencia y objetivos en una llamada estratégica breve.",
+    "step2Title": "Diseño",
+    "step2Text": "Creamos una dirección visual de una página con jerarquía clara y texto persuasivo.",
+    "step3Title": "Lanzamiento",
+    "step3Text": "Tras revisiones, publicamos, optimizamos y entregamos documentación."
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "intro": "Algunas palabras de clientes que necesitaban mejor posicionamiento y una presencia digital más clara.",
+    "quote1": "\"Nuestras llamadas se duplicaron en el primer mes. El nuevo sitio por fin explica claramente lo que ofrecemos.\"",
+    "author1": "Alex",
+    "role1": "Dueño de Negocio de Servicios",
+    "quote2": "\"Rápidos, organizados y muy fáciles de trabajar. Lanzamos en una semana y los resultados fueron inmediatos.\"",
+    "author2": "Priya",
+    "role2": "Gerente de Boutique",
+    "quote3": "\"El proceso fue sencillo desde el primer día. Ahora cada sección transmite nuestra marca con mucha más confianza.\"",
+    "author3": "Marcos",
+    "role3": "Fundador de Consultoría",
+    "quote4": "\"El formato de una sola página dejó nuestra propuesta mucho más clara. El cliente entiende el servicio en menos de un minuto.\"",
+    "author4": "Diana",
+    "role4": "Directora de Estudio de Bienestar",
+    "quote5": "\"Excelente comunicación y muy buen criterio visual. Convirtieron nuestro borrador desordenado en algo elegante y útil.\"",
+    "author5": "Hugo",
+    "role5": "Socio de Firma Legal",
+    "quote6": "\"Nos sorprendió la velocidad de la primera versión. Las revisiones fueron claras y estratégicas.\"",
+    "author6": "Nina",
+    "role6": "Gerente de Hospitalidad",
+    "quote7": "\"Nuestra marca por fin se siente coherente en digital. La nueva página es simple, moderna y fácil de actualizar.\"",
+    "author7": "Sam",
+    "role7": "Líder de Agencia Creativa",
+    "quote8": "\"El proceso eliminó la incertidumbre. Tuvimos hitos claros, texto claro y un lanzamiento sólido.\"",
+    "author8": "Leila",
+    "role8": "Dueña de E-commerce",
+    "quote9": "\"Profesionales, cercanos y detallistas de principio a fin. Ahora parecemos una empresa más grande.\"",
+    "author9": "Victor",
+    "role9": "Fundador de Servicios B2B"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "intro": "Cuéntanos qué quieres construir y te enviaremos un plan práctico con alcance, tiempos y próximos pasos.",
+    "emailLabel": "Correo",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
+    "addressValue": "128 Harbor Street, Oficina 04",
+    "hoursLabel": "Horario",
+    "hoursValue": "Lun-Vie, 9:00-18:00",
+    "formName": "Tu Nombre",
+    "formEmail": "Tu Correo",
+    "formMessage": "Detalles del Proyecto",
+    "formButton": "Enviar Solicitud",
+    "note": "Este es un formulario de prueba para futura integración con tu flujo de email."
+  },
+  "footer": {
+    "tagline": "Equipo pequeño. Sitios limpios. Mensaje claro."
+  }
+}

@@ -1,4 +1,5 @@
 import { FiStar } from "react-icons/fi";
+import { Card } from "../UI";
 import useTestimonials from "./useTestimonials";
 
 export default function Testimonials() {
@@ -20,15 +21,16 @@ export default function Testimonials() {
       <p className="mb-5 max-w-3xl text-sm leading-6 text-(--sea-ink-soft) sm:text-base">
         {t("testimonials.intro")}
       </p>
-      <div className="island-shell rounded-2xl p-4 sm:p-5">
+      <Card className="p-4 sm:p-5">
         <div
           key={activeSlide}
           className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
         >
           {currentSlide.map((item, index) => (
-            <blockquote
+            <Card
+              as="blockquote"
               key={`${item.author}-${activeSlide}-${index}`}
-              className="island-shell rise-in rounded-2xl p-5"
+              className="rise-in p-5"
               style={{ animationDelay: `${index * 90}ms` }}
             >
               <div className="mb-3 flex items-center gap-1 text-(--lagoon-deep)">
@@ -41,10 +43,10 @@ export default function Testimonials() {
                 </p>
                 <p className="m-0 text-xs text-(--sea-ink-soft)">{item.role}</p>
               </footer>
-            </blockquote>
+            </Card>
           ))}
         </div>
-      </div>
+      </Card>
       <div className="mt-4 flex items-center justify-center gap-2">
         {testimonialSlides.map((_, index) => (
           <button

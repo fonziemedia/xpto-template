@@ -3,6 +3,7 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Button, Card } from "../components/UI";
 import "../integrations/i18n";
 
 import appCss from "../styles/app.css?url";
@@ -65,7 +66,11 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 function RootNotFound() {
   return (
     <main className="page-wrap px-4 pb-12 pt-10">
-      <section className="island-shell rounded-4xl px-6 py-12 text-center sm:px-10">
+      <Card
+        as="section"
+        radius="4xl"
+        className="px-6 py-12 text-center sm:px-10"
+      >
         <p className="island-kicker mb-3">404</p>
         <h1 className="display-title mb-4 text-4xl leading-[1.02] font-bold tracking-tight text-(--sea-ink) sm:text-5xl">
           Page Not Found
@@ -74,11 +79,9 @@ function RootNotFound() {
           The page you are looking for does not exist or may have moved.
         </p>
         <div className="mt-7">
-          <a href="/" className="cta-primary inline-flex">
-            Back to Home
-          </a>
+          <Button href="/">Back to Home</Button>
         </div>
-      </section>
+      </Card>
     </main>
   );
 }

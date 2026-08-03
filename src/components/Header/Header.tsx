@@ -3,6 +3,7 @@ import { FiHexagon } from "react-icons/fi";
 import { FiMenu, FiX } from "react-icons/fi";
 import LanguageSelect from "../LanguageSelect";
 import ThemeToggle from "../ThemeToggle";
+import { IconButton } from "../UI";
 import useHeader from "./useHeader";
 
 export default function Header() {
@@ -30,18 +31,18 @@ export default function Header() {
           </Link>
         </h2>
 
-        <button
-          type="button"
+        <IconButton
           aria-controls="mobile-nav-menu"
           aria-expanded={isMobileMenuOpen}
           aria-label={
             isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"
           }
-          className="ml-auto inline-flex h-9 w-9 items-center justify-center rounded-lg border border-(--line) bg-(--surface-strong) text-(--sea-ink) transition hover:bg-(--link-bg-hover) sm:hidden"
+          className="ml-auto sm:hidden"
           onClick={toggleMobileMenu}
+          radius="lg"
         >
           {isMobileMenuOpen ? <FiX size={18} /> : <FiMenu size={18} />}
-        </button>
+        </IconButton>
 
         <div
           id="mobile-nav-menu"

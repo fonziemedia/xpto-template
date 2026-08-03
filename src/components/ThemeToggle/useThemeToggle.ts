@@ -33,17 +33,21 @@ function applyThemeMode(mode: ThemeMode) {
 
 export default function useThemeToggle() {
   const { t } = useTranslation();
-  const [mode, setMode] = useState<ThemeMode>(() => getInitialMode());
+  const [mode, setMode] = useState<ThemeMode>("light");
 
   useEffect(() => {
-    applyThemeMode(mode);
-  }, [mode]);
+    const initialMode = getInitialMode();
+    setMode(initialMode);
+    applyThemeMode(initialMode);
+  }, []);
 
   function toggleMode() {
-    const nextMode: ThemeMode = mode === "light" ? "dark" : "light";
-    setMode(nextMode);
-    applyThemeMode(nextMode);
-    window.localStorage.setItem("theme", nextMode);
+    setMode(currentMode => {
+      const nextMode: ThemeMode = currentMode === "light" ? "dark" : "light";
+      applyThemeMode(nextMode);
+      window.localStorage.setItem("theme", nextMode);
+      return nextMode;
+    });
   }
 
   const label = t("header.themeToggle");

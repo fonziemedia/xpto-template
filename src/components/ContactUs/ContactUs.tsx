@@ -1,10 +1,11 @@
+import { Button, Card } from "../UI";
 import useContactUs from "./useContactUs";
 
 export default function ContactUs() {
   const { t, contactItems } = useContactUs();
 
   return (
-    <section id="contact" className="island-shell mt-10 rounded-2xl p-6 sm:p-8">
+    <Card as="section" id="contact" className="mt-10 p-6 sm:p-8">
       <h2 className="mb-3 text-2xl font-bold text-(--sea-ink)">
         {t("contact.title")}
       </h2>
@@ -25,7 +26,7 @@ export default function ContactUs() {
           ))}
         </div>
 
-        <form className="island-shell rounded-xl p-4 sm:p-5">
+        <Card as="form" radius="xl" className="p-4 sm:p-5">
           <div className="grid gap-3">
             <input
               className="demo-input"
@@ -41,18 +42,15 @@ export default function ContactUs() {
               className="demo-textarea"
               placeholder={t("contact.formMessage")}
             />
-            <button
-              type="button"
-              className="cta-primary w-full justify-center sm:w-auto"
-            >
+            <Button type="button" className="w-full sm:w-auto">
               {t("contact.formButton")}
-            </button>
+            </Button>
             <p className="m-0 text-xs text-(--sea-ink-soft)">
               {t("contact.note")}
             </p>
           </div>
-        </form>
+        </Card>
       </div>
-    </section>
+    </Card>
   );
 }

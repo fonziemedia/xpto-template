@@ -64,9 +64,22 @@ src/
 ## Separation of concerns
 - Always separate concerns (UI/Logic) with a `use[ComponentName].ts` file/hook.
 
+## Utilities
+- Any new utility function under `src/utils/` must include a concise comment that explains what it does and its expected inputs/outputs.
+- Avoid ambiguous utility names. Prefer descriptive names when the behavior is not obvious from usage.
+- Group related utility functions into a single file when they are used together or share a common purpose. For example, `src/utils/formatters.ts` can contain multiple formatting functions.
+
 ## Localization
 - Any user-visible text in components, including button labels, titles, placeholders, and aria labels, must come from the i18n locale files.
 - Reuse existing namespaces first; for header or layout controls, prefer adding keys under the most relevant existing section instead of hardcoding strings.
 
 ## Tailwind conventions
 - Prefer canonical Tailwind arbitrary CSS variable class syntax.
+- Keep component-local styling in Tailwind utilities inside the component. Do not add single-use classes to `src/styles/app.css` for buttons, selects, icons, or other local UI controls unless a real CSS-only limitation makes it necessary.
+
+## Design system
+- Reusable UI primitives live in `src/components/ui/`.
+- Prefer the shared UI primitives across routes and components.
+- Before creating custom markup for a control or container, check whether an existing `ui` primitive already fits and extend it there first when the pattern is reused.
+- Override `ui` primitives with `className` only when the existing API is close and the override is local; if the same override appears more than once, promote it into the design-system component API instead.
+- Only add design-system components that are already used by the product or are required by an active feature. Do not scaffold unused primitives just to fill out a catalog.

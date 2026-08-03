@@ -1,3 +1,4 @@
+import { Card } from "../UI";
 import useHowWeWork from "./useHowWeWork";
 
 export default function HowWeWork() {
@@ -5,7 +6,7 @@ export default function HowWeWork() {
 
   return (
     <section className="mt-10">
-      <div className="island-shell rounded-2xl p-6 sm:p-8">
+      <Card className="p-6 sm:p-8">
         <h2 className="mb-2 text-2xl font-bold text-(--sea-ink)">
           {t("process.title")}
         </h2>
@@ -26,7 +27,7 @@ export default function HowWeWork() {
             </article>
           ))}
         </div>
-      </div>
+      </Card>
     </section>
   );
 }

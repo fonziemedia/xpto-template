@@ -1,13 +1,16 @@
 import { FiArrowRight } from "react-icons/fi";
+import { Button, Card } from "../UI";
 import useIntro from "./useIntro";
 
 export default function Intro() {
   const { t, metrics, badges } = useIntro();
 
   return (
-    <section
+    <Card
+      as="section"
       id="home"
-      className="island-shell relative overflow-hidden rounded-4xl px-6 py-10 sm:px-10 sm:py-14"
+      radius="4xl"
+      className="relative overflow-hidden px-6 py-10 sm:px-10 sm:py-14"
     >
       <div className="pointer-events-none absolute -right-20 -top-16 h-52 w-52 rounded-full bg-[radial-gradient(circle,rgba(79,184,178,0.36),transparent_66%)]" />
       <div className="grid gap-8 lg:grid-cols-[1.35fr_0.8fr] lg:items-end">
@@ -24,13 +27,13 @@ export default function Intro() {
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
-            <a href="#contact" className="cta-primary">
+            <Button href="#contact">
               {t("home.ctaPrimary")}
               <FiArrowRight aria-hidden="true" />
-            </a>
-            <a href="#what-we-do" className="cta-secondary">
+            </Button>
+            <Button href="#what-we-do" variant="secondary">
               {t("home.ctaSecondary")}
-            </a>
+            </Button>
           </div>
 
           <div className="mt-6 flex flex-wrap gap-2">
@@ -42,7 +45,7 @@ export default function Intro() {
           </div>
         </div>
 
-        <aside className="island-shell rounded-2xl p-5">
+        <Card as="aside" className="p-5">
           <p className="island-kicker mb-3">Studio Snapshot</p>
           <div className="space-y-3">
             {metrics.map(({ value, label }) => (
@@ -54,8 +57,8 @@ export default function Intro() {
               </div>
             ))}
           </div>
-        </aside>
+        </Card>
       </div>
-    </section>
+    </Card>
   );
 }

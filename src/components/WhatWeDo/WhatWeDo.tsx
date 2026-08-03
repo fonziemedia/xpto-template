@@ -1,3 +1,4 @@
+import { Card } from "../UI";
 import useWhatWeDo from "./useWhatWeDo";
 
 export default function WhatWeDo() {
@@ -13,10 +14,7 @@ export default function WhatWeDo() {
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {services.map(({ icon: Icon, title, text, detail }) => (
-          <article
-            key={title}
-            className="island-shell feature-card rounded-2xl p-5"
-          >
+          <Card as="article" key={title} tone="feature" className="p-5">
             <span className="icon-badge" aria-hidden="true">
               <Icon />
             </span>
@@ -27,7 +25,7 @@ export default function WhatWeDo() {
             <p className="mt-3 m-0 text-sm leading-6 text-(--sea-ink-soft)">
               {detail}
             </p>
-          </article>
+          </Card>
         ))}
       </div>
     </section>

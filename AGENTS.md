@@ -34,6 +34,12 @@ Copy `.env.example` to `.env` if not present. Key notes for local dev:
 | Dev server (port 3000)        | `pnpm dev`                                                      |
 | Start production server       | `pnpm start`                                                    |
 
+## Dependency versioning
+- Never use `latest` in `package.json` (`dependencies` or `devDependencies`).
+- Always use explicit semver versions, either pinned (`1.170.18`) or caret ranges (`^1.170.18`), based on the currently installed lockfile-resolved version.
+- Caret ranges are allowed and preferred for normal dependency updates.
+- When adding or updating a package, avoid tags/ranges like `latest` and keep `package.json` aligned with `pnpm-lock.yaml`.
+
 
 ## Project Structure
 ```

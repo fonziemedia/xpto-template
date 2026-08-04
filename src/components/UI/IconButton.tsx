@@ -29,7 +29,7 @@ export default function IconButton({
       {...props}
       type={type}
       className={mergeClassNames(
-        "inline-flex h-9 w-9 items-center justify-center border border-(--line) bg-(--surface-strong) text-(--sea-ink) transition-[background-color,transform,border-color] duration-150 hover:bg-(--link-bg-hover) hover:-translate-y-px",
+        "inline-flex h-9 w-9 cursor-pointer items-center justify-center border border-(--line) bg-(--surface-strong) text-(--sea-ink) transition-[background-color,transform,border-color] duration-150 hover:bg-(--link-bg-hover) hover:-translate-y-px",
         radiusClassNames[radius],
         className
       )}

@@ -7,12 +7,13 @@
   },
   "packageManager": "pnpm@11.5.1",
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vite dev --host --port 3000",
     "generate-routes": "tsr generate",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "start": "node .output/server/index.mjs"
+    "start": "node server/index.mjs",
+    "start_local": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",

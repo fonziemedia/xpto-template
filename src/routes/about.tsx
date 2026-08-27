@@ -1,5 +1,5 @@
-import { Card } from "../components/UI";
 import { createFileRoute } from "@tanstack/react-router";
+import { Card } from "@/components/UI";
 
 export const Route = createFileRoute("/about")({
   component: About

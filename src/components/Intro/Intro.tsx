@@ -1,5 +1,5 @@
 import { FiArrowRight } from "react-icons/fi";
-import { Button, Card } from "../UI";
+import { Button, Card } from "@/components/UI";
 import useIntro from "./useIntro";
 
 export default function Intro() {

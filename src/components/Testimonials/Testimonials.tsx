@@ -1,5 +1,5 @@
 import { FiStar } from "react-icons/fi";
-import { Card } from "../UI";
+import { Card } from "@/components/UI";
 import useTestimonials from "./useTestimonials";
 
 export default function Testimonials() {

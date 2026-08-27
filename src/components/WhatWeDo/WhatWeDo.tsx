@@ -1,4 +1,4 @@
-import { Card } from "../UI";
+import { Card } from "@/components/UI";
 import useWhatWeDo from "./useWhatWeDo";
 
 export default function WhatWeDo() {

@@ -1,4 +1,4 @@
-import { Card } from "../UI";
+import { Card } from "@/components/UI";
 import useHowWeWork from "./useHowWeWork";
 
 export default function HowWeWork() {

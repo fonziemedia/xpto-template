@@ -1,12 +1,11 @@
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import { Button, Card } from "../components/UI";
-import "../integrations/i18n";
+import { Footer, Header } from "@/components";
+import { Button, Card } from "@/components/UI";
+import "@/integrations/i18n";
 
-import appCss from "../styles/app.css?url";
+import appCss from "@/styles/app.css?url";
 
 const THEME_INIT_SCRIPT = `(function(){try{var stored=window.localStorage.getItem('theme');var mode=stored==='light'||stored==='dark'?stored:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');if(stored!=='light'&&stored!=='dark'){window.localStorage.setItem('theme',mode);}var root=document.documentElement;root.classList.remove('light','dark');root.classList.add(mode);root.setAttribute('data-theme',mode);root.style.colorScheme=mode;}catch(e){}})();`;
 

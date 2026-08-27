@@ -3,7 +3,7 @@ import { FiHexagon } from "react-icons/fi";
 import { FiMenu, FiX } from "react-icons/fi";
 import LanguageSelect from "../LanguageSelect";
 import ThemeToggle from "../ThemeToggle";
-import { IconButton } from "../UI";
+import { IconButton } from "@/components/UI";
 import useHeader from "./useHeader";
 
 export default function Header() {

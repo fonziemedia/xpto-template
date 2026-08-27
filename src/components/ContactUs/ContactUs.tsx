@@ -1,4 +1,4 @@
-import { Button, Card } from "../UI";
+import { Button, Card } from "@/components/UI";
 import useContactUs from "./useContactUs";
 
 export default function ContactUs() {

@@ -1,0 +1,9 @@
+export { default as ContactUs } from "./ContactUs";
+export { default as Footer } from "./Footer";
+export { default as Header } from "./Header";
+export { default as HowWeWork } from "./HowWeWork";
+export { default as Intro } from "./Intro";
+export { default as LanguageSelect } from "./LanguageSelect";
+export { default as Testimonials } from "./Testimonials";
+export { default as ThemeToggle } from "./ThemeToggle";
+export { default as WhatWeDo } from "./WhatWeDo";

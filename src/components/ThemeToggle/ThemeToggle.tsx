@@ -1,5 +1,5 @@
 import { FiMoon, FiSun } from "react-icons/fi";
-import { IconButton } from "../UI";
+import { IconButton } from "@/components/UI";
 import useThemeToggle from "./useThemeToggle";
 
 export default function ThemeToggle() {

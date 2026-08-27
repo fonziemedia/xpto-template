@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card > (Snapshot) renders a default card 1`] = `
+<DocumentFragment>
+  <div
+    class="island-shell rounded-2xl"
+  >
+    Default content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card > (Snapshot) renders a feature card as a custom element 1`] = `
+<DocumentFragment>
+  <section
+    class="island-shell feature-card rounded-4xl"
+  >
+    Featured content
+  </section>
+</DocumentFragment>
+`;

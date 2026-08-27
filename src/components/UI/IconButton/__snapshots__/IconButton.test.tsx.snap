@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconButton > (Snapshot) renders a default icon button 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Close dialog"
+    class="inline-flex h-9 w-9 cursor-pointer items-center justify-center border border-(--line) bg-(--surface-strong) text-(--sea-ink) transition-[background-color,transform,border-color] duration-150 hover:bg-(--link-bg-hover) hover:-translate-y-px rounded-xl"
+    type="button"
+  >
+    ×
+  </button>
+</DocumentFragment>
+`;
+
+exports[`IconButton > (Snapshot) renders a submit icon button with a custom radius 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Submit"
+    class="inline-flex h-9 w-9 cursor-pointer items-center justify-center border border-(--line) bg-(--surface-strong) text-(--sea-ink) transition-[background-color,transform,border-color] duration-150 hover:bg-(--link-bg-hover) hover:-translate-y-px rounded-lg"
+    type="submit"
+  >
+    ✓
+  </button>
+</DocumentFragment>
+`;

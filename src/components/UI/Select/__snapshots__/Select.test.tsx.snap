@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Select > (Snapshot) renders a labeled select 1`] = `
+<DocumentFragment>
+  <label
+    class="sr-only"
+    for="status"
+  >
+    Status
+  </label>
+  <div
+    class="relative inline-flex shrink-0"
+  >
+    <select
+      class="h-9 w-fit min-w-0 cursor-pointer appearance-none rounded-xl border border-(--line) bg-(--surface-strong) pl-2.5 pr-8 text-sm font-semibold text-(--sea-ink) outline-none transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-(--lagoon-deep) [&_option]:bg-(--surface-strong) [&_option]:text-(--sea-ink)"
+      id="status"
+    >
+      <option
+        selected=""
+        value="pending"
+      >
+        Pending
+      </option>
+      <option
+        value="approved"
+      >
+        Approved
+      </option>
+    </select>
+    <span
+      aria-hidden="true"
+      class="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-(--sea-ink)/80"
+    >
+      <svg
+        fill="none"
+        height="14"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="14"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 12 15 18 9"
+        />
+      </svg>
+    </span>
+  </div>
+</DocumentFragment>
+`;

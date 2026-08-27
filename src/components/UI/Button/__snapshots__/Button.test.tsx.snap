@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > (Snapshot) renders a primary button 1`] = `
+<DocumentFragment>
+  <button
+    class="inline-flex items-center justify-center gap-[0.45rem] rounded-full px-4 py-[0.62rem] text-[0.88rem] font-bold no-underline transition-transform hover:-translate-y-px disabled:pointer-events-none disabled:opacity-60 border border-[color-mix(in_oklab,var(--lagoon-deep)_40%,var(--line))] bg-[color-mix(in_oklab,var(--lagoon)_22%,var(--surface-strong))] text-(--sea-ink)"
+    type="button"
+  >
+    Continue
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button > (Snapshot) renders as an anchor when href is provided 1`] = `
+<DocumentFragment>
+  <a
+    class="inline-flex items-center justify-center gap-[0.45rem] rounded-full px-4 py-[0.62rem] text-[0.88rem] font-bold no-underline transition-transform hover:-translate-y-px disabled:pointer-events-none disabled:opacity-60 border border-(--line) bg-[color-mix(in_oklab,var(--surface-strong)_72%,transparent)] text-(--sea-ink-soft)"
+    href="/docs"
+    variant="secondary"
+  >
+    Read more
+  </a>
+</DocumentFragment>
+`;

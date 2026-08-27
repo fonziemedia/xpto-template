@@ -89,7 +89,7 @@ When adding a new component to `src/components/` or `src/components/UI/` or `src
 
 - Create component directory: `src/components/MyComponent/`
    - `MyComponent.tsx` - implementation
-   - `MyComponent.test.tsx` - tests (aim for 100% coverage)
+   - `MyComponent.test.tsx` - tests (cover all meaningful behavior branches)
    - `index.ts` - re-exports
 - Export from `src/components/index.ts` or `src/components/UI/index.ts` or `src/components/Dialogs/index.ts`
 
@@ -113,3 +113,15 @@ When adding a new component to `src/components/` or `src/components/UI/` or `src
 - Before creating custom markup for a control or container, check whether an existing `ui` primitive already fits and extend it there first when the pattern is reused.
 - Override `ui` primitives with `className` only when the existing API is close and the override is local; if the same override appears more than once, promote it into the design-system component API instead.
 - Only add design-system components that are already used by the product or are required by an active feature. Do not scaffold unused primitives just to fill out a catalog.
+
+## Testing
+Tests use Vitest + React Testing Library. Globals enabled (`describe`, `it`, `expect`, `vi`).
+
+- Integration tests over unit tests for user-facing behavior. Render real components and assert on DOM content rather than verifying mock calls.
+- Unit tests for utilities - standalone data structures (RingBuffer, parsers) deserve isolated tests. Use them sparingly.
+- Test user behavior, not implementation details
+- Minimize mocks - only mock external deps
+- Snapshot tests: prefix with `(Snapshot)`, basic rendering only
+- Never use `querySelector` in tests. Prefer RTL queries.
+- When semantic queries aren't possible, add `data-testid` attributes. And don't be shy with them
+- Don't use defensive measures like try-catch or conditional checks in tests. The test will fail anyway if our assumptions are wrong.

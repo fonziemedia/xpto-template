@@ -11,9 +11,9 @@ const isVitest = !!process.env.VITEST;
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [
+    ...((!isVitest && [devtools(), tanstackStart(), nitro()]) || []),
     viteReact(),
-    tailwindcss(),
-    ...((!isVitest && [devtools(), tanstackStart(), nitro()]) || [])
+    tailwindcss()
   ],
   test: {
     environment: "jsdom",

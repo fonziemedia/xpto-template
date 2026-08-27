@@ -44,14 +44,34 @@ Copy `.env.example` to `.env` if not present. Key notes for local dev:
 ## Project Structure
 ```
 src/
-  components/     UI, resume, layout, animation, theme, locale components
+  components/     Layout, section, animation, theme, locale components
+  components/UI/  Shared/Reusable UI primitive components
+  components/Dialogs/  Modal/dialog components
   routes/         File-based routing (TanStack React Router)
   integrations/   Feature modules (auth, email, jobs, storage)
   utils/          Utility functions
-  dialogs/        Modal/dialog components
   hooks/          Custom React hooks
   styles/         CSS and Tailwind configuration
 ```
+
+## Code Style
+
+### General Principles
+
+- Prioritize readability over cleverness
+- No comments in code - explain reasoning in chat/commits
+- Avoid premature abstractions - start concrete, extract later
+- Small, focused changes over large dumps
+- Never commit unless explicitly asked
+
+### TypeScript
+
+- Use `type` not `interface` (except when merging is required)
+- No magic numbers - extract into named constants
+- Strict mode with `noUnusedLocals` and `noUnusedParameters`
+- Do not use one-letter variable names.
+AVOID: `(b) => b.buildIndexEntry()`
+PREFER: `(build) => build.buildIndexEntry()`
 
 ## File and folder naming
 - Files and folders should always be named in english.
@@ -60,15 +80,18 @@ src/
 - Component names should be concise and describe the section or utility they contain. They should not have irrelevant su/prefixes such as "Harmonized" or "Refactored".
 - Avoid duplicating UI markup or logic when the same pattern appears more than once; extract a shared component or hook instead.
 - Each sub component that is complex enough to have it's own file should also have it's own folder.
-- Component file names should match their main component name. Use an `index.ts` to handle import/export of the component file easily like:
-  ```
-  import MyComponent from "./MyComponent";
-  export default MyComponent;
-  ```
 - Always "export default" components.
+- Always separate concerns (UI/Business logic) with a `use[ComponentName].ts` file/hook.
 
-## Separation of concerns
-- Always separate concerns (UI/Logic) with a `use[ComponentName].ts` file/hook.
+## Adding Components
+
+When adding a new component to `src/components/` or `src/components/UI/` or `src/components/Dialogs/`:
+
+- Create component directory: `src/components/MyComponent/`
+   - `MyComponent.tsx` - implementation
+   - `MyComponent.test.tsx` - tests (aim for 100% coverage)
+   - `index.ts` - re-exports
+- Export from `src/components/index.ts` or `src/components/UI/index.ts` or `src/components/Dialogs/index.ts`
 
 ## Utilities
 - Any new utility function under `src/utils/` must include a concise comment that explains what it does and its expected inputs/outputs.
@@ -85,6 +108,7 @@ src/
 
 ## Design system
 - Reusable UI primitives live in `src/components/ui/`.
+- Keep business logic out of reusable UI components.
 - Prefer the shared UI primitives across routes and components.
 - Before creating custom markup for a control or container, check whether an existing `ui` primitive already fits and extend it there first when the pattern is reused.
 - Override `ui` primitives with `className` only when the existing API is close and the override is local; if the same override appears more than once, promote it into the design-system component API instead.

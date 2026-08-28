@@ -1,0 +1,27 @@
+{
+  "name": "xpto",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installOhMyZsh": true,
+      "configureZshAsDefaultShell": true
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/sshd:1": {}
+    // "ghcr.io/devcontainer-community/devcontainer-features/pi.dev:1": {
+    //   "version": "0.84.3"
+    // }
+  },
+  "workspaceMount": "source=/home/crom/Projects/xpto,target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "mounts": ["source=pnpm-vol,target=/home/node/.local/share/pnpm,type=volume"],
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": []
+    }
+  },
+  "remoteUser": "node",
+  "onCreateCommand": "sudo chown -R node:node /home/node/.local/share/pnpm",
+  "postCreateCommand": "pnpm config set -g store-dir ~/.local/share/pnpm/store"
+}
